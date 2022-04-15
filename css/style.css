@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+.main, .message{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    border: 1px solid black;
+    font-size: 12em;
+    opacity: 1;
+    transition: all 400ms;
+}
+
+.square:nth-child(1), .square + .square{
+    border-right: none;
+    border-bottom: none;
+}
+
+.square:nth-child(3), .square:nth-child(6), .square:nth-child(9){
+    border-right: 1px solid black;
+}
+
+.square:nth-child(7), .square:nth-child(8), .square:nth-child(9){
+    border-bottom: 1px solid black;
+}
+
+.message{
+    flex-direction: column;
+    margin-top: 1em;
+    align-items: center;
+    font-size: 2em;
+}
+.message p{
+    margin: 0;
+}
+
+.message a{
+    font-size: 1.5rem;
+}
+
+.hide{
+    color: #cacaca;
+}
+
+.winner{
+    color: black;
+}
