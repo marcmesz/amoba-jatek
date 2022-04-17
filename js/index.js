@@ -70,6 +70,7 @@ function checkForMatch(element){
             }
         })
         if(tiesquares===9){
+            gameover=true
             message="It's a TIE 😞"
             messageDiv.innerHTML=`<p>${message}</p><a href="javascript:location.reload();">Restart game</a>`
         }
